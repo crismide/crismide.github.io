@@ -1,63 +1,121 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Just call me Milego</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="icon" href="images/emoji.iamrohit.in-apple-1f34a.png" type="image/png">
+
+
 	</head>
 	<body class="is-preload">
+		<script src="functions.js"></script>
 		<header>
 			<h1>.•*•.•*•. JUST CALL ME MILEGO .•*•.•*•.</h1>
 		</header>
 
 		<!--The buttons to my links-->
-		<div>
-			<button>
+		<div class="several-buttons">
+			<button onclick="openInNewTab('https://www.linkedin.com/in/cris-milego-de-diego-30629b153/');">
 				<div>
+					<i class="fab fa-linkedin"></i>
 					Linkedin
 				</div>
 			</button>
-			<button>
+			
+			<button onclick="openInNewTab('https://github.com/crismide');">
 				<div>
-					Indeed
-				</div>
-			</button>
-			<button>
-				<div>
+					<i class="fab fa-github"></i>
 					Github
 				</div>
 			</button>
 		</div>
 
 		<!--The about me section-->
-		<div class="big-box">
-			<div>
-				<button>Bio</button>
-				<button>Hobbies</button>
+		<div id="first-big-box">
+			<div class="several-buttons">
+				<button class="selectable-button" onclick="showContent('bio')" id="bioButton">Bio</button>
+				<button class="selectable-button inactive" id ="hobbiesButton" onclick="showContent('hobbies')">Hobbies</button>
 			</div>
-			<div>
-				<!--my photo-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae varius ipsum. Curabitur eu leo tempus, lacinia erat et, fringilla lectus. Pellentesque velit mauris, condimentum a neque id, semper suscipit lorem. Proin lacinia hendrerit porta. Curabitur velit turpis, tincidunt eget odio sit amet, sollicitudin venenatis odio. Curabitur velit turpis, tincidunt eget odio sit amet, sollicitudin venenatis odio.Curabitur velit turpis, tincidunt eget odio sit amet, sollicitudin venenatis odio.</p>
+			<div id="bioContent">
+				<img src="images/IMG-20240503-WA0016.jpg" alt="Image of my face with a sakura tree in the background" class="rounded-image">
+				<p>Hello World! I'm a computer engineer with a passion for continuous learning. My interest in computers began as a child when I started playing video games. I was so fascinated by how everything worked that I decided to explore it further! I completed my Bachelor's and Master's degrees at the Polytechnic University of Valencia, and during my second year of my Master's, I had the opportunity to study abroad at Uppsala University. In addition to my technical background, I have a deep artistic side. I've been practicing ballet since I was five and later earned a Bachelor's degree in Contemporary Dance. This blend of technical expertise and creativity fuels my curiosity and openness to trying new things!</p>
+			</div>
+
+			<div id="hobbiesContent">
+				
+				<div class="hobbies-box">
+					<img src="images/climbin-emoji.png" width="40px" height="40px">
+					<h4>Bouldering</h4>
+					<p>I'm still a beginner but I don't miss a week of bouldering with my friends. </p>
+				</div>
+				<div class="hobbies-box">
+					<img src="images/yarn-emoji.png" width="40px" height="40px">
+					<h4>Doing crochet</h4>
+					<p>Currently I'm finishing a cardigan that I started last year, my biggest project so far. </p>
+				</div>
+				<div class="hobbies-box">
+					<img src="images/books-emoji.png" width="40px" height="40px">
+					<h4>Reading</h4>
+					<p>I enjoy reading non-fiction and fantasy even though I try to read a bit of everything.</p>
+				</div>
+				<div class="hobbies-box">
+					<img src="images/paint-emoji.png" width="40px" height="40px">
+					<h4>Drawing</h4>
+					<p>I started with realism and traditional art mediums but now I'm expanding to digital art. </p>
+				</div>
 			</div>
 		</div>
 
 		<!--My projects section-->
-		<div class="big-box"></div>
+		<div id="second-big-box">
+			<h2>SOME OF MY PROJECTS</h2>
+			<div class="row-of-proyects">
+				<div class="project">
+					<img src="images/microcontroller.png" height="60px" width="60px"/>
+					<h3>Custom microcontroller</h3>
+					<p font-size="13px">For this project that I did in my Master's I used a custom microcontroller and then I strarted implementing functions coding with C</p>
+					<button onclick="openInNewTab('https://github.com/crismide/PROYECTO_SEU');">View code</button>
+				</div>
+				<div class="project">
+					<img src="images/dance-net.png" height="60px" width="60px"/>
+					<h3>DanceNet</h3>
+					<p font-size="13px">As a part of my bachelor thesis, I developed a website to store dance creative processes thanks to my knowledge in the dance field.</p>
+					<button onclick="openInNewTab('https://github.com/crismide/tfg_dancenet');">View code</button>
+				</div>
+				
+			</div>
+			<div class="row-of-proyects">
+				<div class="project">
+					<img src="images/tiny-robot.png" height="60px" width="60px"/>
+					<h3>Several Interactive Systems</h3>
+					<p font-size="13px">These are some examples of what I did in Python in the Interactive Systems course in Uppsala University, easily my favorite course there!.</p>
+					<button onclick="openInNewTab('https://github.com/crismide/LAB_Interactive');">View code</button>
+				</div>
+				<div class="project">
+					<img src="images/concurrency.png" height="60px" width="60px"/>
+					<h3>Concurrency practice</h3>
+					<p font-size="13px">Some examples of some work I did on concurrency and distributed systems I did with Java. I covered from classic problems to original ones.</p>
+					<button onclick="openInNewTab('https://github.com/crismide/concurrency-distributed_systems');">View code</button>
+				</div>
+				
+			</div>
+		</div>
+
 
 		<!--The end with my links-->
 		<footer>
-			<h3>My contact info:</h3>
-			<p></p>
-			<p></p>
-			<p></p>
+			<div id="footer-content">
+				<h3>My contact info:</h3>
+				<p>crissmilego@gmail.com</p>
+				<p><a href="https://www.linkedin.com/in/cris-milego-de-diego-30629b153/">LinkedIn</a></p>
+			</div>
 		</footer>
 
 		<!-- Scripts -->
