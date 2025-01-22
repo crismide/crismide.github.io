@@ -1,6 +1,7 @@
 {
   "name": "personal-website",
-  "private": true,
+  "homepage": "https://github.com/crismide/crismide.github.io",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
