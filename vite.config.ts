@@ -6,6 +6,7 @@ export default defineConfig({
   base: "/crismide.github.io/",
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
   },
   plugins: [react()],
 })
