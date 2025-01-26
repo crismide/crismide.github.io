@@ -10,7 +10,7 @@ const BioCard = () => {
         </div>
         {isBioVisible ? (
           <div className="flex flex-row">
-          <img src="src/assets/IMG-20240503-WA0016(1).jpg" className="rounded-full w-[180px] h-[180px] mr-8" alt="a photo of me smiling with a sakura tree on the background"  />
+          <img src="/IMG-20240503-WA0016(1).jpg" className="rounded-full w-[180px] h-[180px] mr-8" alt="a photo of me smiling with a sakura tree on the background"  />
           <p className="text-justify">Hello World! I'm a computer engineer with a passion for continuous learning. My interest in computers began as a child when I started playing video games. I was so fascinated by how everything worked that I decided to explore it further! I completed my Bachelor's and Master's degrees at the Polytechnic University of Valencia, and during my second year of my Master's, I had the opportunity to study abroad at Uppsala University. My technical expertise and creativity fuels my curiosity and openness to trying new things!</p>
       </div>
         ) : (
