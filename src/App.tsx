@@ -5,7 +5,7 @@ import ProjectsCard from "./components/ProjectsCard"
 
 function App() {
   return (
-    <div className="font-mono px-[180px]">
+    <div className="font-mono md:px-[180px] sm:px-5 px-0">
       <Header/>
       <BioCard/>
       <ProjectsCard/>

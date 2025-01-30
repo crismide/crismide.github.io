@@ -4,9 +4,23 @@
 
 @layer components {
   .link-button {
-    @apply bg-[#404040] rounded-[15px] text-white w-[175px] py-[12px] px-[30px] inline hover:bg-[#131313];
+    @apply bg-[#404040] rounded-[15px] text-white  w-auto md:py-[12px] md:px-[30px] py-[8px] px-[15px]  hover:bg-[#131313] 
+    text-[16px] md:text-base;
   }
   .card{
-    @apply border border-[2px] border-black p-10 mb-8 shadow-md w-auto;
+    @apply sm:border sm:border-[2px] sm:border-black md:p-8 p-2 mb-8 sm:shadow-md w-auto;
   }
+  p,a {
+      @apply text-[16px] md:text-[17px];
+    }   
+  h1{
+    @apply text-[25px] md:text-3xl text-center
+  } 
+  .emoji-title{
+    @apply md:text-3xl text-xl
+  }
+  .written-title{
+    @apply md:text-xl text-lg md:font-normal font-semibold
+  }
+
 }
